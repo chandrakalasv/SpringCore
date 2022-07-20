@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>\
+<bean id = "airtel" class = "/SpringIoc/src/main/java/com/example/ioc/Airtel.java"></beans>
