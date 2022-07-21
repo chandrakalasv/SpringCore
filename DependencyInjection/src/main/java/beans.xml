@@ -5,14 +5,23 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
         
-<bean id = "chandu"  class = "com.example.di.Student">
+<!-- <bean id = "chandu"  class = "com.example.di.Student">
 <property name="studentName" value="chandana"></property>
 <property name="id" value="1"></property>
 </bean>
-
-<bean id = "priya"  class = "com.example.di.Student">
+ -->
+<!-- <bean id = "priya"  class = "com.example.di.Student">
 <property name="studentName" value="priyanka"></property>
 <property name="id" value="2"></property>
+</bean> -->
+
+<bean id = "chandu"  class = "com.example.di.Student">
+<constructor-arg name="studentName" value="chandana" type = "java.lang.String"/>
+<constructor-arg  name="id" value="1" type ="int"/>
+</bean>
+
+<bean id = "priya"  class = "com.example.di.Student">
+<constructor-arg  name="id" value="2" type ="int"/>
 </bean>
 
 </beans>

@@ -6,14 +6,23 @@ public class Student {
 	private int id;
 	
 	
-	public void setId(int id) {
+	public Student(String studentName, int id) {
+		this.studentName = studentName;
 		this.id = id;
 	}
 
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
+	public Student(int id) {
+		this.id = id;
 	}
-	
+
+	//	public void setId(int id) {
+//		this.id = id;
+//	}
+//
+//	public void setStudentName(String studentName) {
+//		this.studentName = studentName;
+//	}
+//	
 	void display() {
 		System.out.println("student name is " + studentName + " " + "id is" + id);
 	}
