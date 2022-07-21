@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+<!-- <bean id = "std" class = "com.example.diot.Student">
+	<property name="id" value = "101"></property>
+	<property name="mathCheat" >
+	<bean class = "com.example.diot.MathCheat"></bean>
+	</property>
+</bean>
+
+        
+<bean id = "std1" class = "com.example.diot.AnotherStudent">
+	<property name="id" value = "102"></property>
+	<property name="cheat" >
+	<bean class = "com.example.diot.MathCheat"></bean>
+	</property>
+</bean> -->
+
+<bean id = "mathCheatObject" class = "com.example.diot.MathCheat"></bean>
+
+<bean id = "std" class = "com.example.diot.Student">
+	<property name="id" value = "101"></property>
+	<property name="mathCheat" ref = "mathCheatObject"/>
+</bean>
+
+        
+<bean id = "std1" class = "com.example.diot.AnotherStudent">
+	<property name="id" value = "102"></property>
+	<property name="cheat" ref = "mathCheatObject"/>
+</bean>
+
+
+</beans>
