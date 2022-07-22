@@ -9,7 +9,7 @@
         https://www.springframework.org/schema/context/spring-context.xsd">
 
 <context:annotation-config/>
-
+<!-- <bean id = "heart" class = "com.example.aw.Heart"></bean> -->
         
 <bean id = "humanHeart" class = "com.example.aw.Heart">
 <property name="nameOfAnimal" value = "human"></property>

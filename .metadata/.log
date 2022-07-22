@@ -5435,3 +5435,18 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 513 not found.
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
 !SUBENTRY 1 org.eclipse.core.resources 4 376 2022-07-22 15:13:16.271
 !MESSAGE Marker id 513 not found.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-22 22:51:42.252
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-22 22:51:42.254
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-22 22:51:42.254
+!MESSAGE buffering callback sts4.classpath.vTPtzKkW Spring_Value_Required_Annotation false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-22 22:51:42.255
+!MESSAGE executing callback sts4.classpath.vTPtzKkW 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-22 22:51:42.262
+!MESSAGE executing callback sts4.classpath.vTPtzKkW SUCCESS [done]
