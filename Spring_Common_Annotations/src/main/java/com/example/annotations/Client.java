@@ -6,10 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Client {
 	public static void main(String[] args) {
-		ApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
 		College collegeBean = context.getBean("collegeBean", College.class);
 		System.out.println("object created by spring using component annotation" + " " + collegeBean);
 		collegeBean.show();
+		context.close();
 		
 	}
 }
