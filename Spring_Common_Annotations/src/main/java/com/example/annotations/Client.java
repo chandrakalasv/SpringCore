@@ -9,8 +9,7 @@ public class Client {
 		ApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
 		College collegeBean = context.getBean("collegeBean", College.class);
 		System.out.println("object created by spring using component annotation" + " " + collegeBean);
+		collegeBean.show();
 		
 	}
-
-
 }
