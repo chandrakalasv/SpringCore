@@ -8,9 +8,16 @@ import org.springframework.context.annotation.Configuration;
 /* @ComponentScan(basePackages = "com.example.annotations") */
 public class CollegeConfig {
 	
-	@Bean(name = {"college","collegeBean"})
+	@Bean() // collegeBean is the bean id
+	public Principal principalBean() {
+		return new  Principal();
+	}
+
+	
+	@Bean()
 	public College collegeBean() {
 		College college = new College();
+		college.setPrincipal(principalBean());
 		return college;
 	}
 
