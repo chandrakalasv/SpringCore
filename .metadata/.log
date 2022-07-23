@@ -5450,3 +5450,18 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 513 not found.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-22 22:51:42.262
 !MESSAGE executing callback sts4.classpath.vTPtzKkW SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-23 13:43:59.601
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-23 13:43:59.603
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-23 13:43:59.603
+!MESSAGE buffering callback sts4.classpath.vTPtzKkW Spring_Common_Annotations false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-23 13:43:59.604
+!MESSAGE executing callback sts4.classpath.vTPtzKkW 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-23 13:43:59.616
+!MESSAGE executing callback sts4.classpath.vTPtzKkW SUCCESS [done]
