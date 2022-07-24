@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 public class StudentDao {
 	private String driver;
@@ -35,8 +36,8 @@ public class StudentDao {
 	public void init() throws ClassNotFoundException, SQLException {
 		Class.forName(driver);
 		con = DriverManager.getConnection(url, userName, password);
-		
 	}
+	
 	public void selectAllRows() throws ClassNotFoundException, SQLException {
 		
 		Statement st = con.createStatement();
@@ -60,9 +61,10 @@ public class StudentDao {
 		
 	}
 	
+	@PreDestroy
 	public void closeConnection( ) throws SQLException {
+		System.out.println("inside destroy method"); 
 		con.close();
 	}
-
 
 }

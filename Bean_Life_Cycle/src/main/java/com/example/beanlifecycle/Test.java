@@ -11,6 +11,7 @@ public class Test {
 		System.out.println("beans.xml file loaded");
 		StudentDao student = context.getBean("student", StudentDao.class);
 		student.selectAllRows();
+		((ClassPathXmlApplicationContext)context).close();
 		
 	}
 }
