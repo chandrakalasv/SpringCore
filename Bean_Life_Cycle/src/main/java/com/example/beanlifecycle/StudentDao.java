@@ -32,10 +32,15 @@ public class StudentDao {
 		this.password = password;
 	}
 
-	@PostConstruct
+	/* @PostConstruct */
 	public void init() throws ClassNotFoundException, SQLException {
+		createConnection();
+	}
+	
+	public  void createConnection() throws ClassNotFoundException, SQLException {
 		Class.forName(driver);
 		con = DriverManager.getConnection(url, userName, password);
+		
 	}
 	
 	public void selectAllRows() throws ClassNotFoundException, SQLException {
@@ -61,7 +66,11 @@ public class StudentDao {
 		
 	}
 	
-	@PreDestroy
+	/* @PreDestroy */
+	public void destroy() throws SQLException {
+		closeConnection();
+	}
+	
 	public void closeConnection( ) throws SQLException {
 		System.out.println("inside destroy method"); 
 		con.close();
