@@ -6,19 +6,17 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
-        https://www.springframework.org/schema/context/spring-context.xsd"
-        default-init-method = "init"
-        default-destroy-method = "destroy">
+        https://www.springframework.org/schema/context/spring-context.xsd">
 
 <context:annotation-config/>
-<bean id = "student" class = "com.example.beanlifecycle.StudentDao" >
+<!-- <bean id = "student" class = "com.example.beanlifecycle.StudentDao" >
 <property name = "driver" value = "com.mysql.jdbc.Driver"/>
 <property name = "url" value = "jdbc:mysql://localhost:3306/ESNew"/>
 <property name = "userName" value = "root"/>
 <property name = "password" value = "Maanvij@123"/>
-
-</bean>
-<bean id = "hello" class = "com.example.beanlifecycle.Hello"></bean>
+ -->
+<!-- </bean> -->
+<bean id = "hello" class = "com.example.beanlifecycle.Hello" ></bean>
 
 
 </beans>

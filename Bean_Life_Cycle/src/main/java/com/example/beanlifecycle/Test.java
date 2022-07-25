@@ -9,9 +9,10 @@ public class Test {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		System.out.println("beans.xml file loaded");
-		StudentDao student = context.getBean("student", StudentDao.class);
+		/* StudentDao student = context.getBean("student", StudentDao.class); */
 		Hello hello = context.getBean("hello", Hello.class);
-		student.selectAllRows();
+		hello.sample();
+		/* student.selectAllRows(); */
 		context.close();
 		
 	}
